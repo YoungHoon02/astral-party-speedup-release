@@ -17,6 +17,25 @@ Astral Party의 캐릭터/애니메이션 재생 속도를 조절하는 BepInEx 
 
 zip 안의 `설치방법.txt`에 더 자세한 안내가 있습니다.
 
+> ### ⚠️ BepInEx를 새로 설치했다면 반드시 확인하세요
+>
+> `BepInEx\config\BepInEx.cfg`를 열어 아래 설정을 **`false`로** 바꿔주세요.
+> 기본값이 `true`인데, 이 게임에서는 이 설정 때문에 실행하자마자 튕깁니다.
+>
+> ```ini
+> [Logging]
+> UnityLogListening = false
+> ```
+>
+> 이 모드와 무관한 **BepInEx 자체 기능**이며, 끄지 않으면 아래 오류가 납니다.
+>
+> ```
+> System.AccessViolationException: Attempted to read or write protected memory.
+>    at Il2CppInterop.Runtime.Injection.Hooks.MetadataCache_GetTypeInfoFromTypeDefinitionIndex_Hook
+> ```
+>
+> (`BepInEx.cfg`는 게임을 한 번 실행해야 생성됩니다)
+
 ## 사용법
 
 게임 실행 시 함께 뜨는 설정 창에서 배속(1x ~ 5x)을 고르고 **Save**를 누르면
