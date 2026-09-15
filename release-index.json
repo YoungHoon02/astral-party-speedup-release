@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.0.2",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.2/AstralPartyAnimSpeed-v1.0.2.zip",
-    "sha256":  "0ebe033d8ada9d486bb36ab6e2b492f9db0d878e24c06dd217e929ade3b514af",
-    "size":  174083,
-    "notes":  "설치 안내에 BepInEx UnityLogListening 끄는 방법 추가 (게임 튕김 방지)"
+    "version":  "1.0.3",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.3/AstralPartyAnimSpeed-v1.0.3.zip",
+    "sha256":  "07f810fb25fdde8c4457e2dc3f045f97aeff6f79d0d0f61a469b5df935aa27c4",
+    "size":  174857,
+    "notes":  "설정 창 개편: 배속 선택 즉시 적용, 화면 간소화, 고DPI 대응"
 }
