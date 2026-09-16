@@ -9,14 +9,13 @@ Astral Party에서 화면에 재생되는 캐릭터와 각종 연출의 애니�
 
 > 이 저장소는 **배포 전용**입니다. 소스 코드는 포함되어 있지 않습니다.
 
-## 최신 버전
+## 다운로드
 
-현재 버전은 **v1.0.3**입니다.
+[![최신 릴리스 다운로드](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYoungHoon02%2Fastral-party-speedup-release%2Fdistribution%2Frelease-index.json&query=%24.version&prefix=v&label=DOWNLOAD&color=7C3AED&logo=github&logoColor=white&style=for-the-badge&cacheSeconds=300)](../../releases/latest)
 
-- **[AstralPartyAnimSpeed-v1.0.3.zip 다운로드](../../releases/download/v1.0.3/AstralPartyAnimSpeed-v1.0.3.zip)**
-- [최신 릴리스 페이지](../../releases/latest)
+버튼의 버전은 `distribution/release-index.json`을 기준으로 자동 갱신됩니다.
 
-SHA-256:
+v1.0.3 배포 파일 SHA-256:
 
 ~~~text
 07f810fb25fdde8c4457e2dc3f045f97aeff6f79d0d0f61a469b5df935aa27c4
