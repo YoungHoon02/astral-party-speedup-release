@@ -15,11 +15,7 @@ Astral Party에서 캐릭터와 각종 연출의 재생 속도를
 
 버튼의 버전은 `distribution/release-index.json`을 기준으로 자동 갱신됩니다.
 
-v1.0.3 배포 파일 SHA-256:
-
-~~~text
-07f810fb25fdde8c4457e2dc3f045f97aeff6f79d0d0f61a469b5df935aa27c4
-~~~
+최신 배포 파일의 SHA-256은 [업데이트 인덱스](../../blob/distribution/release-index.json)에서 확인할 수 있습니다.
 
 ## 준비물
 
@@ -76,10 +72,14 @@ System.AccessViolationException: Attempted to read or write protected memory.
 
 ### 3. 모드 설치
 
-1. 위의 <code>AstralPartyAnimSpeed-v1.0.3.zip</code>을 받습니다.
+1. 위의 다운로드 버튼에서 최신 버전의 <code>AstralPartyAnimSpeed-v*.zip</code>을 받습니다.
 2. zip을 <code>AstralParty_INT.exe</code>가 있는 게임 폴더에 그대로 풉니다.
 3. 덮어쓰기 여부를 물으면 허용합니다.
 4. 게임을 실행합니다.
+
+이전 버전에서 업데이트할 때 기존 배속·씬 설정을 유지하려면 설치 전에
+<code>BepInEx\plugins\AstralPartyAnimSpeed\config.json</code>을 백업하고 압축을 푼 뒤 복원하세요.
+zip에는 기본 설정 파일이 포함되어 있습니다.
 
 정상 설치되면 다음 폴더에 플러그인과 설정 앱이 들어갑니다.
 
@@ -102,25 +102,15 @@ BepInEx\plugins\AstralPartyAnimSpeed\
 설정 창은 처음 나타날 때만 게임 위로 올라오며, 이후에는 다른 일반 창처럼 뒤로
 보내거나 최소화할 수 있습니다.
 
-## 최근 변경 사항 (v1.0.3)
+## 최근 변경 사항 (v1.0.4)
 
-### New Features
-
-- 배속과 자동 실행 설정이 클릭 즉시 저장되어 별도의 Save 버튼이 필요하지 않습니다.
-- 현재 적용된 배속을 <code>Now running at {N}x</code> 상태 문구로 확인할 수 있습니다.
-- 다른 설정 파일이 필요한 경우 <code>Change config file...</code>에서 선택할 수 있습니다.
-
-### Bug Fixes
-
-- 설정 창이 계속 다른 창 위에 고정되던 문제를 해결했습니다.
-- Windows 디스플레이 배율이 100~200%일 때 화면이 어긋나거나 잘리던 문제를
-  해결했습니다.
-- 업데이트 안내가 길어도 내용이 잘리지 않도록 창 높이를 자동으로 조정합니다.
-- 설정 파일을 바꿀 때 일시적인 파일 사용 충돌로 실패하던 문제를 줄였습니다.
-
-### Performance Improvements
-
-- 불필요한 Save 및 Reload 과정을 없애 설정 변경 단계를 줄였습니다.
+- 설정 앱이 파일을 저장하는 순간 게임에서 설정을 다시 읽으면 간헐적으로 프레임이
+  끊길 수 있던 문제를 줄였습니다.
+- 배속이나 턴 타이머 패치 적용에 실패하면 로그에서 어느 기능에 문제가 생겼는지
+  확인할 수 있습니다.
+- 턴 타이머를 점검해야 할 때만 `config.json`의
+  `diagnosticsVerifyTimerPatch`를 `true`로 설정해 호출 여부를 기록할 수 있습니다.
+  평소에는 기본값인 `false`로 두세요.
 
 이전 버전의 변경 내용은 [Releases](../../releases)에서 확인할 수 있습니다.
 
