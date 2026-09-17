@@ -35,8 +35,15 @@ v1.0.3 배포 파일 SHA-256:
 
 이미 BepInEx 6 IL2CPP가 설치되어 있다면 이 단계는 건너뛰어도 됩니다.
 
+BepInEx는 모드마다 따로 설치하는 프로그램이 아닙니다. 다른 모드 때문에 이미 설치되어
+있다면 다시 덮어쓰지 말고 아래의 `BepInEx\config\BepInEx.cfg` 설정과 모드 설치 단계만
+확인해 주세요. 새로 설치할 때는 `Unity.IL2CPP-win-x64` 빌드를 선택하고, ZIP 안의
+`BepInEx` 폴더가 게임 폴더 바로 아래에 오도록 압축을 풀어야 합니다. `BepInEx\BepInEx`
+처럼 폴더가 중첩되면 모드가 인식되지 않습니다.
+
 1. BepInEx 빌드 페이지에서 <code>Unity.IL2CPP-win-x64</code>로 시작하는 최신 zip을 받습니다.
-2. zip의 내용을 <code>AstralParty_INT.exe</code>가 있는 게임 폴더에 풉니다.
+2. zip의 내용을 <code>AstralParty_INT.exe</code>가 있는 게임 폴더에 풉니다. 게임 폴더 바로
+   아래에 <code>BepInEx</code> 폴더가 생겨야 합니다.
 3. 게임을 한 번 실행한 뒤 종료합니다. 첫 실행은 interop 파일 생성 때문에 오래 걸릴 수 있습니다.
 
 Steam 설치 경로는 일반적으로 다음과 같습니다.
