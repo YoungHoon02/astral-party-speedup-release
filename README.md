@@ -9,6 +9,12 @@ Astral Party에서 캐릭터와 각종 연출의 재생 속도를
 
 > 이 저장소는 **배포 전용**입니다. 소스 코드는 포함되어 있지 않습니다.
 
+## 사용 전 안내
+
+설치 전에 [USER_AGREEMENT.txt](USER_AGREEMENT.txt)(사용 전 안내)를 확인해 주세요.
+설치 절차는 [HOW_TO_INSTALL.txt](HOW_TO_INSTALL.txt)에 정리되어 있으며, 두 파일은
+배포 zip의 `BepInEx\plugins\AstralPartyAnimSpeed\` 폴더에도 같은 내용으로 들어 있습니다.
+
 ## 다운로드
 
 [![최신 릴리스 다운로드](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYoungHoon02%2Fastral-party-speedup-release%2Fdistribution%2Frelease-index.json&query=%24.version&prefix=v&label=DOWNLOAD&color=7C3AED&logo=github&logoColor=white&style=for-the-badge&cacheSeconds=300)](../../releases/latest)
@@ -77,15 +83,15 @@ System.AccessViolationException: Attempted to read or write protected memory.
 3. 덮어쓰기 여부를 물으면 허용합니다.
 4. 게임을 실행합니다.
 
-이전 버전에서 업데이트할 때 기존 배속·씬 설정을 유지하려면 설치 전에
-<code>BepInEx\plugins\AstralPartyAnimSpeed\config.json</code>을 백업하고 압축을 푼 뒤 복원하세요.
-zip에는 기본 설정 파일이 포함되어 있습니다.
-
-정상 설치되면 다음 폴더에 플러그인과 설정 앱이 들어갑니다.
+정상 설치되면 다음 폴더에 플러그인, 설정 앱, <code>USER_AGREEMENT.txt</code>,
+<code>HOW_TO_INSTALL.txt</code>가 들어갑니다.
 
 ~~~text
 BepInEx\plugins\AstralPartyAnimSpeed\
 ~~~
+
+설정 파일 <code>config.json</code>은 게임을 처음 실행할 때 이 폴더에 자동으로 만들어집니다.
+zip에는 설정 파일이 없으므로 업데이트해도 기존 설정이 그대로 유지됩니다.
 
 ## 사용법
 
@@ -102,15 +108,14 @@ BepInEx\plugins\AstralPartyAnimSpeed\
 설정 창은 처음 나타날 때만 게임 위로 올라오며, 이후에는 다른 일반 창처럼 뒤로
 보내거나 최소화할 수 있습니다.
 
-## 최근 변경 사항 (v1.0.4)
+## 최근 변경 사항 (v1.0.5)
 
-- 설정 앱이 파일을 저장하는 순간 게임에서 설정을 다시 읽으면 간헐적으로 프레임이
-  끊길 수 있던 문제를 줄였습니다.
-- 배속이나 턴 타이머 패치 적용에 실패하면 로그에서 어느 기능에 문제가 생겼는지
-  확인할 수 있습니다.
-- 턴 타이머를 점검해야 할 때만 `config.json`의
-  `diagnosticsVerifyTimerPatch`를 `true`로 설정해 호출 여부를 기록할 수 있습니다.
-  평소에는 기본값인 `false`로 두세요.
+- 업데이트할 때 기존 설정이 초기화되지 않습니다. zip에서 설정 파일을 빼고,
+  첫 실행 때 자동으로 만들어지도록 바꿨습니다. 더 이상 config.json을 백업할
+  필요가 없습니다.
+- 사용 전 안내(<code>USER_AGREEMENT.txt</code>)와 설치 방법(<code>HOW_TO_INSTALL.txt</code>)을
+  zip과 이 저장소에 같은 내용으로 함께 제공합니다. 게임 폴더에 따로 풀리던
+  <code>설치방법.txt</code>는 없어졌으며, 이전 버전에서 남은 파일은 지워도 됩니다.
 
 이전 버전의 변경 내용은 [Releases](../../releases)에서 확인할 수 있습니다.
 
