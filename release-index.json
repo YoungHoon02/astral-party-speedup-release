@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.0.4",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.4/AstralPartyAnimSpeed-v1.0.4.zip",
-    "sha256":  "ca27c1e0de901543b97762fd28da9d7d6e9eb4517c2d7f2158c0af61110d2659",
-    "size":  167894,
-    "notes":  "턴 타이머 패치 상태 진단 추가 및 설정 파일 읽기 중 게임 끊김 개선"
+    "version":  "1.0.5",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.5/AstralPartyAnimSpeed-v1.0.5.zip",
+    "sha256":  "d7d1c2b01b7e9f014aaeb76e647fddc72e1dbd6abf8723a886ba8a0081569e9f",
+    "size":  168004,
+    "notes":  "업데이트 시 설정이 초기화되지 않도록 개선, 사용 안내와 설치 방법을 한 곳으로 정리"
 }
