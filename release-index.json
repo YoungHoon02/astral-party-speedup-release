@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.0.5",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.5/AstralPartyAnimSpeed-v1.0.5.zip",
-    "sha256":  "d7d1c2b01b7e9f014aaeb76e647fddc72e1dbd6abf8723a886ba8a0081569e9f",
-    "size":  168004,
-    "notes":  "업데이트 시 설정이 초기화되지 않도록 개선, 사용 안내와 설치 방법을 한 곳으로 정리"
+    "version":  "1.0.6",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.6/AstralPartyAnimSpeed-v1.0.6.zip",
+    "sha256":  "2bde1860e0ea87819dfc354f440b7f3083d600042909e3410d4ace1eccdf58c7",
+    "size":  166769,
+    "notes":  "선택한 배속이 표시된 값 그대로 적용되도록 수정하고 게임 업데이트 후 상태 확인 로그를 추가"
 }
