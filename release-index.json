@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.0.6",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.6/AstralPartyAnimSpeed-v1.0.6.zip",
-    "sha256":  "2bde1860e0ea87819dfc354f440b7f3083d600042909e3410d4ace1eccdf58c7",
-    "size":  166769,
-    "notes":  "선택한 배속이 표시된 값 그대로 적용되도록 수정하고 게임 업데이트 후 상태 확인 로그를 추가"
+    "version":  "1.0.7",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.7/AstralPartyAnimSpeed-v1.0.7.zip",
+    "sha256":  "6c8a716829673af653c73614c3b7998f4e5e60528a7e72f8843d0116334bdee5",
+    "size":  171265,
+    "notes":  "PvP 방·경기에서는 배속이 자동으로 1배로 고정되고 설정 창에 경고 표시"
 }
