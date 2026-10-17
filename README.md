@@ -29,10 +29,6 @@ Astral Party에서 캐릭터와 각종 연출의 재생 속도를
 
 ## 다운로드
 
-[![최신 릴리스 다운로드](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYoungHoon02%2Fastral-party-speedup-release%2Fdistribution%2Frelease-index.json&query=%24.version&prefix=v&label=DOWNLOAD&color=7C3AED&logo=github&logoColor=white&style=for-the-badge&cacheSeconds=300)](https://github.com/YoungHoon02/astral-party-speedup-release/releases/latest)
-
-버튼의 버전은 `distribution/release-index.json`을 기준으로 자동 갱신됩니다.
-
 최신 배포 파일의 SHA-256은 [업데이트 인덱스](https://github.com/YoungHoon02/astral-party-speedup-release/blob/distribution/release-index.json)에서 확인할 수 있습니다.
 
 ## 준비물
