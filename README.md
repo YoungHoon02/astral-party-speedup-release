@@ -1,5 +1,10 @@
 # Astral Party 배속 모드
 
+[![최신 릴리스](https://img.shields.io/github/v/release/YoungHoon02/astral-party-speedup-release?label=%EC%B5%9C%EC%8B%A0%20%EB%A6%B4%EB%A6%AC%EC%8A%A4&color=2ea44f)](https://github.com/YoungHoon02/astral-party-speedup-release/releases/latest)
+[![다운로드](https://img.shields.io/github/downloads/YoungHoon02/astral-party-speedup-release/total?label=%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C)](https://github.com/YoungHoon02/astral-party-speedup-release/releases)
+[![BepInEx 6 IL2CPP](https://img.shields.io/badge/BepInEx-6%20IL2CPP-blue)](https://builds.bepinex.dev/projects/bepinex_be)
+[![라이선스](https://img.shields.io/badge/%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4-MIT-green)](LICENSE)
+
 Astral Party에서 캐릭터와 각종 연출의 재생 속도를
 <code>1x / 1.5x / 2x / 3x / 5x</code>로 조절하는 BepInEx 모드입니다.
 
@@ -24,11 +29,11 @@ Astral Party에서 캐릭터와 각종 연출의 재생 속도를
 
 ## 다운로드
 
-[![최신 릴리스 다운로드](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYoungHoon02%2Fastral-party-speedup-release%2Fdistribution%2Frelease-index.json&query=%24.version&prefix=v&label=DOWNLOAD&color=7C3AED&logo=github&logoColor=white&style=for-the-badge&cacheSeconds=300)](../../releases/latest)
+[![최신 릴리스 다운로드](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYoungHoon02%2Fastral-party-speedup-release%2Fdistribution%2Frelease-index.json&query=%24.version&prefix=v&label=DOWNLOAD&color=7C3AED&logo=github&logoColor=white&style=for-the-badge&cacheSeconds=300)](https://github.com/YoungHoon02/astral-party-speedup-release/releases/latest)
 
 버튼의 버전은 `distribution/release-index.json`을 기준으로 자동 갱신됩니다.
 
-최신 배포 파일의 SHA-256은 [업데이트 인덱스](../../blob/distribution/release-index.json)에서 확인할 수 있습니다.
+최신 배포 파일의 SHA-256은 [업데이트 인덱스](https://github.com/YoungHoon02/astral-party-speedup-release/blob/distribution/release-index.json)에서 확인할 수 있습니다.
 
 ## 준비물
 
@@ -126,7 +131,7 @@ zip에는 설정 파일이 없으므로 업데이트해도 기존 설정이 그�
 - 게임 업데이트 후 모드가 정상인지 알 수 있도록, 시작할 때 상태를 로그에 한 줄 남깁니다.
 - 라이선스 파일(<code>LICENSE</code>)을 설치 폴더에 함께 넣었습니다.
 
-이전 버전의 변경 내용은 [Releases](../../releases)에서 확인할 수 있습니다.
+이전 버전의 변경 내용은 [Releases](https://github.com/YoungHoon02/astral-party-speedup-release/releases)에서 확인할 수 있습니다.
 
 ## 업데이트 확인
 
@@ -134,7 +139,7 @@ zip에는 설정 파일이 없으므로 업데이트해도 기존 설정이 그�
 <code>Download</code> 버튼을 표시합니다. 업데이트 파일을 자동으로 덮어쓰지는 않습니다.
 
 업데이트 정보는 <code>distribution</code> 브랜치의
-<a href="../../blob/distribution/release-index.json">release-index.json</a>을
+<a href="https://github.com/YoungHoon02/astral-party-speedup-release/blob/distribution/release-index.json">release-index.json</a>을
 <code>raw.githubusercontent.com</code>에서 읽습니다. <code>api.github.com</code>을 직접 사용하지 않으므로
 미인증 GitHub API의 IP당 요청 제한에 영향을 받지 않습니다.
 
