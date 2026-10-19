@@ -29,15 +29,19 @@ Astral Party에서 캐릭터와 각종 연출의 재생 속도를
 
 ## 다운로드
 
+[![최신 릴리스 다운로드](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYoungHoon02%2Fastral-party-speedup-release%2Fdistribution%2Frelease-index.json&query=%24.version&prefix=v&label=DOWNLOAD&color=7C3AED&logo=github&logoColor=white&style=for-the-badge&cacheSeconds=300)](https://github.com/YoungHoon02/astral-party-speedup-release/releases/latest)
+
+버튼의 버전은 `distribution/release-index.json`을 기준으로 자동 갱신됩니다.
+
 최신 배포 파일의 SHA-256은 [업데이트 인덱스](https://github.com/YoungHoon02/astral-party-speedup-release/blob/distribution/release-index.json)에서 확인할 수 있습니다.
 
 ## 준비물
 
 - Windows x64 버전 Astral Party
 - [BepInEx 6 Unity.IL2CPP-win-x64](https://builds.bepinex.dev)
-- [.NET Desktop Runtime 8.0 x64](https://dotnet.microsoft.com/download/dotnet/8.0)
 
-.NET Desktop Runtime은 게임과 별도로 실행되는 배속 설정 창에 필요합니다.
+새 버전 알림 프로그램은 Windows 10/11에 기본으로 들어 있는 .NET Framework 4.8로
+동작하므로 런타임을 따로 설치하지 않아도 됩니다.
 
 ## 설치
 
@@ -91,7 +95,7 @@ System.AccessViolationException: Attempted to read or write protected memory.
 3. 덮어쓰기 여부를 물으면 허용합니다.
 4. 게임을 실행합니다.
 
-정상 설치되면 다음 폴더에 플러그인, 설정 앱, <code>USER_AGREEMENT.txt</code>,
+정상 설치되면 다음 폴더에 플러그인, 새 버전 알림 프로그램, <code>USER_AGREEMENT.txt</code>,
 <code>HOW_TO_INSTALL.txt</code>, <code>LICENSE</code>가 들어갑니다.
 
 ~~~text
@@ -101,38 +105,49 @@ BepInEx\plugins\AstralPartyAnimSpeed\
 설정 파일 <code>config.json</code>은 게임을 처음 실행할 때 이 폴더에 자동으로 만들어집니다.
 zip에는 설정 파일이 없으므로 업데이트해도 기존 설정이 그대로 유지됩니다.
 
+이전 버전에서 업데이트했다면 같은 폴더의 <code>AstralPartyAnimSpeedConfigurator</code>로
+시작하는 파일과 <code>configurator-settings.json</code>, <code>status.json</code>은 더 쓰지 않으므로
+지워도 됩니다.
+
 ## 사용법
 
-게임을 실행하면 작은 설정 창이 함께 열립니다.
+배속은 게임 화면 안에서 바꿉니다. 별도 창을 띄우지 않습니다.
 
-- 원하는 배속을 누르면 **Save 버튼 없이 즉시 저장**됩니다.
-- 게임에는 기본적으로 몇 초 안에 새 배속이 적용됩니다.
-- <code>Now running at 3x</code>와 같은 상태 문구로 현재 배속을 확인할 수 있습니다.
-- <code>Launch this window when the game starts</code>를 해제하면 다음 실행부터 설정 창이 자동으로 열리지 않습니다.
-- 다른 위치의 설정 파일을 사용해야 할 때만 <code>Change config file...</code>을 누릅니다.
-- 설정 창을 닫거나 게임을 정상 종료하면 배속 값은 자동으로 **1x**로 돌아갑니다.
-- 로비와 매칭 등 제외된 화면에서는 1x로 동작합니다.
-- PvP 방이나 PvP 경기에 들어가면 배속이 자동으로 멈추고 1x로 동작합니다. PvP에서 나오면 선택한 배속이 다시 적용됩니다. 이때 설정 창 아래쪽 상태 칸에 노란 경고가 표시됩니다.
+- **설정 창의 배속 탭**: 게임 설정 창 왼쪽 탭 맨 아래의 <code>배속</code> 탭에서 고릅니다.
+- **F8 빠른 메뉴**: 게임 중 <code>F8</code>을 누르면 화면 위쪽에 배속 메뉴가 열리고, 다시 누르면 닫힙니다.
 
-설정 창은 처음 나타날 때만 게임 위로 올라오며, 이후에는 다른 일반 창처럼 뒤로
-보내거나 최소화할 수 있습니다.
+두 곳은 같은 설정을 쓰므로 한쪽에서 바꾸면 다른 쪽에도 바로 반영됩니다.
 
-## 최근 변경 사항 (v1.0.6)
+- 원하는 배속을 고르면 **즉시 저장되고 바로 적용**됩니다.
+- 메뉴의 <code>지금 적용 중</code> 표시로 실제로 걸려 있는 배속을 확인할 수 있습니다.
+- 게임을 정상 종료하면 배속 값은 자동으로 **1x**로 돌아갑니다.
+- 로비와 매칭 등 제외된 화면에서는 1x로 동작하고, 게임에 들어가면 고른 배속이 적용됩니다.
+- PvP 방이나 PvP 경기에 들어가면 배속이 자동으로 멈추고 1x로 동작합니다. PvP에서 나오면 선택한 배속이 다시 적용됩니다. 이때 메뉴의 상태 표시에 PvP라 1x로 고정된다고 나옵니다.
 
-- 선택한 배속이 표시된 값 그대로 적용되도록 바로잡았습니다. 이전 버전에서는 같은
-  배속이 표시보다 더 빠르게 느껴질 수 있었습니다. 이전과 같은 체감을 원하면 한 단계
-  높은 배속을 선택해 주세요.
-- 설정 파일의 타이머 관련 고급 옵션을 정리했습니다. 턴 타이머는 항상 실제 시간으로
-  흐르며, 기존 설정 파일은 그대로 사용할 수 있습니다.
-- 게임 업데이트 후 모드가 정상인지 알 수 있도록, 시작할 때 상태를 로그에 한 줄 남깁니다.
-- 라이선스 파일(<code>LICENSE</code>)을 설치 폴더에 함께 넣었습니다.
+## 최근 변경 사항 (v1.1.0)
+
+- 배속을 게임 안에서 바꿉니다. 게임 설정 창 왼쪽 탭 맨 아래의 <code>배속</code> 탭에서
+  게임과 같은 모양의 목록으로 고를 수 있습니다.
+- 게임 중 <code>F8</code>로 빠른 배속 메뉴를 열고 닫을 수 있습니다. 설정 창의 배속 탭과
+  같은 설정을 써서 한쪽에서 바꾸면 다른 쪽에도 바로 반영됩니다.
+- 게임과 함께 뜨던 별도 설정 창을 없앴습니다. 이제 .NET Desktop Runtime을 따로 설치하지
+  않아도 됩니다.
+- 새 버전 확인은 게임을 켤 때 새 버전이 있을 때만 작은 알림 창으로 알려 줍니다.
+  <code>이번 버전은 무시</code>를 누르면 그 버전은 다시 알리지 않습니다.
+- 예전에 설정 창 자동 실행을 꺼 두었다면 새 버전 확인도 꺼진 상태로 이어집니다.
 
 이전 버전의 변경 내용은 [Releases](https://github.com/YoungHoon02/astral-party-speedup-release/releases)에서 확인할 수 있습니다.
 
 ## 업데이트 확인
 
-설정 창은 시작할 때 새 버전을 한 번 확인하며 새 버전이 있을 때만 안내와
-<code>Download</code> 버튼을 표시합니다. 업데이트 파일을 자동으로 덮어쓰지는 않습니다.
+게임을 켤 때 게임과 별도로 실행되는 알림 프로그램이 새 버전을 한 번 확인하고,
+새 버전이 있을 때만 알림 창을 띄웁니다. 게임 안의 플러그인은 네트워크를 쓰지 않습니다.
+
+- <code>업데이트하러 가기</code>: 브라우저에서 배포 페이지를 엽니다. 업데이트 파일을 자동으로 덮어쓰지는 않습니다.
+- <code>이번 버전은 무시</code>: 그 버전은 다시 알리지 않습니다.
+- 창을 닫으면 다음 실행 때 다시 알립니다.
+- 모드 폴더의 <code>AstralPartyAnimSpeedUpdater.exe</code>를 직접 실행하면 언제든 확인할 수 있습니다.
+- 게임을 켤 때 확인하지 않으려면 <code>config.json</code>의 <code>checkForUpdatesOnStart</code>를 <code>false</code>로 바꿉니다.
 
 업데이트 정보는 <code>distribution</code> 브랜치의
 <a href="https://github.com/YoungHoon02/astral-party-speedup-release/blob/distribution/release-index.json">release-index.json</a>을
@@ -147,10 +162,10 @@ zip에는 설정 파일이 없으므로 업데이트해도 기존 설정이 그�
 그래도 실행되지 않으면 <code>BepInEx\plugins\AstralPartyAnimSpeed</code> 폴더를 잠시 다른 곳으로
 옮긴 뒤 게임이 실행되는지 확인합니다.
 
-### 설정 창이 나타나지 않는 경우
+### 배속 탭이나 F8 메뉴가 보이지 않는 경우
 
-.NET Desktop Runtime 8.0 **Windows x64 Desktop Runtime**이 설치되어 있는지 확인합니다.
-일반 .NET Runtime이나 ASP.NET Core Runtime과는 다른 항목입니다.
+게임 업데이트로 화면 구조가 바뀌면 배속 탭이나 F8 메뉴가 나타나지 않을 수 있습니다.
+이때는 <code>BepInEx\LogOutput.log</code>에서 <code>[ui]</code>로 시작하는 줄을 확인해 제보해 주세요.
 
 ### 게임 업데이트 후 배속이 적용되지 않는 경우
 
