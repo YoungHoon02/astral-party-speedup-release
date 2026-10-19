@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.0.7",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.0.7/AstralPartyAnimSpeed-v1.0.7.zip",
-    "sha256":  "6c8a716829673af653c73614c3b7998f4e5e60528a7e72f8843d0116334bdee5",
-    "size":  171265,
-    "notes":  "PvP 방·경기에서는 배속이 자동으로 1배로 고정되고 설정 창에 경고 표시"
+    "version":  "1.1.0",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.1.0/AstralPartyAnimSpeed-v1.1.0.zip",
+    "sha256":  "0f61464e92919186902b12b753dac5912c4765f1fec85c6592b6101286b69498",
+    "size":  69459,
+    "notes":  "배속을 게임 설정 창의 배속 탭과 F8 빠른 메뉴에서 바로 바꿀 수 있습니다. 별도 설정 창이 없어져 .NET Desktop Runtime 설치가 필요 없습니다."
 }
