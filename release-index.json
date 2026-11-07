@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.1.0",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.1.0/AstralPartyAnimSpeed-v1.1.0.zip",
-    "sha256":  "0f61464e92919186902b12b753dac5912c4765f1fec85c6592b6101286b69498",
-    "size":  69459,
-    "notes":  "배속을 게임 설정 창의 배속 탭과 F8 빠른 메뉴에서 바로 바꿀 수 있습니다. 별도 설정 창이 없어져 .NET Desktop Runtime 설치가 필요 없습니다."
+    "version":  "1.2.0",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.2.0/AstralPartyAnimSpeed-v1.2.0.zip",
+    "sha256":  "871aa2c90bb1a3cd74b11cdbe837cf944e6a4fd28ffa55c4c3e83411159abbac",
+    "size":  72278,
+    "notes":  "배속 방식에 \u0027내 턴만 배속\u0027을 추가했습니다. 다른 플레이어의 턴에는 자동으로 1x로 돌아가고, 내 턴과 몬스터 턴에는 고른 배속이 유지됩니다."
 }
