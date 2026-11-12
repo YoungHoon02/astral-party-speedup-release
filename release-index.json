@@ -1,8 +1,8 @@
 {
     "schemaVersion":  1,
-    "version":  "1.2.0",
-    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.2.0/AstralPartyAnimSpeed-v1.2.0.zip",
-    "sha256":  "871aa2c90bb1a3cd74b11cdbe837cf944e6a4fd28ffa55c4c3e83411159abbac",
-    "size":  72278,
-    "notes":  "배속 방식에 \u0027내 턴만 배속\u0027을 추가했습니다. 다른 플레이어의 턴에는 자동으로 1x로 돌아가고, 내 턴과 몬스터 턴에는 고른 배속이 유지됩니다."
+    "version":  "1.2.1",
+    "downloadUrl":  "https://github.com/YoungHoon02/astral-party-speedup-release/releases/download/v1.2.1/AstralPartyAnimSpeed-v1.2.1.zip",
+    "sha256":  "2d2cd32d3f78d8e6208a8184def066a15e39edda8238e1af3c564f3c9349b571",
+    "size":  71906,
+    "notes":  "게임 업데이트로 보이지 않던 배속 설정을 키 설정 화면 맨 아래로 옮겼습니다. PvP에서는 배속 기능이 완전히 꺼집니다."
 }
